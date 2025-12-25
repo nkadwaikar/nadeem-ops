@@ -1,43 +1,34 @@
 
-# **🚀 Nadeem’s Cloud Engineering Portfolio**
+# **🚀 Cloud Engineering — Built With Precision and Occasional Coffee Spills**
 
-Welcome to my cloud engineering portfolio.  
-This site brings together the labs, architectures, and troubleshooting guides I’ve built while working with Azure services and automation. Everything here is designed to be clear, reproducible, and easy for others to follow and maintain.
-
----
-
-## **📘 Featured Labs**
-
-### **Azure Front Door**
-- **Azure Front Door (Standard/Premium) Deep‑Dive**  
-  End‑to‑end deployment, routing, caching, and validation.
-
-- **Static Website Hosting via Azure Front Door**  
-  Publish a static website globally using Azure Storage + Front Door.
-
-### **Azure CDN**
-- **Microsoft CDN (Standard) Lab**  
-  Create CDN profiles and endpoints, configure caching, and validate global delivery.
-
-### **Azure Storage**
-- **Static Website Hosting (Storage Account)**  
-  Enable static website hosting and validate direct origin behavior.
+This site includes a few labs, small architectures, and notes I’ve created while working with Azure services.  
+Everything is written in a simple, easy‑to‑follow way… even on days when the coffee machine is judging me.
 
 ---
 
 ## **👋 About Me**
 
-I’m a cloud engineer focused on building clear, reliable, and cost‑efficient solutions.  
-I enjoy working with Azure services, automation, and clean documentation that others can easily follow and maintain.
+I work with Azure services and enjoy putting together clear, practical notes that make cloud tasks easier to understand.  
+I like keeping things organized and lightweight, so they’re easy to revisit later — especially when I forget how I did something the first time.
 
 ---
 
-## **🧭 Navigation**
+## **📘 Featured Labs**
 
-- **Home**  
-- **Labs**  
-- **Architecture Diagrams**  
-- **Automation**  
-- **Troubleshooting**  
+### **Azure Front Door (Standard/Premium) — Static Website Lab**  
+A small walkthrough of setting up Azure Front Door with a static site.  
+It includes the usual steps, a few helpful checks, and the occasional “why is this not propagating yet” moment.
+
+---
+
+### **Azure Storage Static Website**  
+A simple setup for hosting a static site in Azure Storage.  
+Straightforward, lightweight, and great for those days when you want things to just work without surprises.
+
+---
+
+### **Azure CDN (Microsoft CDN) — Coming Soon**  
+A short lab on using Microsoft’s CDN service.  
+Still in progress, but it’s already teaching me new ways to appreciate caching… and patience.
 
 ---
