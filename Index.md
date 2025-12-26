@@ -40,3 +40,5 @@ Real‑world rule examples: redirects, rewrites, header tweaks, cache overrides,
 
 ### **Azure Front Door Premium — Private Link End‑to‑End Lab**
 A deeper dive into secure architectures using Front Door Premium with Private Link — private origins, locked‑down storage, and global delivery without exposing your backend.
+
+---
