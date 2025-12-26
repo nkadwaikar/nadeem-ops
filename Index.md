@@ -13,17 +13,17 @@ I like keeping things organized and lightweight, so they’re easy to revisit la
 
 ## 📘 Featured Labs
 
-### 1. Azure Storage Static Website
+### **1. Azure Storage Static Website**
 A simple setup for hosting a static site in Azure Storage.  
 Straightforward, lightweight, and great for those days when you want things to just work without surprises.
 
 ---
 
-### 2. Azure Front Door — Routing & Global Delivery
+### **2. Azure Front Door — Routing & Global Delivery**
 A two‑part walkthrough covering both routing and global content delivery for static websites:
 
 **• Static Website Routing**  
-How to connect Azure Front Door to a static site, including helpful checks and the occasional “why is this not propagating yet” moment.
+How to connect Azure Front Door to a static website and validate that routing is working correctly.
 
 **• Modern CDN Delivery (Front Door Standard)**  
 Azure CDN is retired for new deployments, and Front Door Standard now provides the modern CDN experience.  
@@ -33,15 +33,10 @@ This section covers global content delivery, caching behavior, edge delivery, an
 
 ## 🛠️ Upcoming Labs
 
-### Azure Front Door Rules Engine — Practical Scenarios
+### **Azure Front Door Rules Engine — Practical Scenarios**
 Real‑world rule examples: redirects, rewrites, header tweaks, cache overrides, and the classic “why is this rule not firing yet” troubleshooting moments.
 
 ---
 
-### Azure Front Door Standard — CDN vs Routing Behavior Comparison
-A side‑by‑side look at how Front Door behaves in CDN mode vs routing mode — covering caching, propagation, update timing, and runtime differences.
-
----
-
-### Azure Front Door Premium — Private Link End‑to‑End Lab
+### **Azure Front Door Premium — Private Link End‑to‑End Lab**
 A deeper dive into secure architectures using Front Door Premium with Private Link — private origins, locked‑down storage, and global delivery without exposing your backend.
