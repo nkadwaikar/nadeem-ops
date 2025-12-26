@@ -7,7 +7,7 @@
 Deploy a static website using **Azure Storage Static Website Hosting** and publish it globally through **Azure Front Door (Standard/Premium)**.  
 This lab covers:
 
-- Static website hosting  
+- Static website hostingå  
 - Front Door endpoint, origin, and route configuration  
 - Validation using `curl`  
 - Caching behavior  
