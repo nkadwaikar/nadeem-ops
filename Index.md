@@ -47,20 +47,20 @@ This lab covers global content delivery using Front Door Standard in CDN mode �
 ## **🛠️ Upcoming Labs
 
 
-### **Azure Front Door Rules Engine — Practical Scenarios
+### Azure Front Door Rules Engine — Practical Scenarios
 A hands‑on collection of real‑world rule examples using the Front Door Rules Engine.  
 This lab will walk through redirects, rewrites, header adjustments, cache overrides, and a few classic “why is this rule not firing yet” troubleshooting moments.  
 A natural next step after your Front Door routing and CDN‑mode labs.
 
 ---
 
-### **Azure Front Door Standard — CDN vs Routing Behavior Comparison
+### Azure Front Door Standard — CDN vs Routing Behavior Comparison
 A side‑by‑side look at how Azure Front Door behaves in CDN mode versus routing mode.  
 This lab will compare caching behavior, update timing, propagation differences, and how each mode handles failures.  
 A great way to show the real runtime differences that the unified portal UI hides.
 
 ---
 
-### **Azure Front Door Premium — Private Link End‑to‑End Lab
+### Azure Front Door Premium — Private Link End‑to‑End Lab
 A deeper dive into secure architectures using Front Door Premium with Private Link.  
 This lab will cover private origins, locked‑down storage, and how to serve global traffic through Front Door while keeping your backend completely private.  
