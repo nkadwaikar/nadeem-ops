@@ -1,9 +1,3 @@
-
----
-
-# ✅ **DAY 4 — Azure-Governance-Policy-Lab.md**
-
-```markdown
 # Day 4 — Azure Policy + Management Groups
 
 ## Chapters to Read

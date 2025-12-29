@@ -1,9 +1,3 @@
-
----
-
-# ✅ **DAY 2 — PIM-Governance-Lab.md**
-
-```markdown
 # Day 2 — Privileged Identity Management (PIM) + Access Reviews
 
 ## Chapters to Read
