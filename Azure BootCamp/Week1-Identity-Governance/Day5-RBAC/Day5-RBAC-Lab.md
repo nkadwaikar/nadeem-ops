@@ -24,9 +24,16 @@
 - PIM → Role activation works
 - Policy → Compliance enforced
 - Private Endpoint → DNS resolves privately
+- Architecture diagram reflects all components
 
 ## Architecture Diagram
-Add file: `diagram.png`
+Add file: `diagram.png`  
+Recommended sections:
+- Identity (Entra ID, PIM, RBAC)
+- VM + Managed Identity
+- Storage + Private Endpoint + DNS
+- Management Group + Policies
+- End‑to‑end flow arrows
 
 ## Expected Outcome
 A complete, portfolio‑ready identity + governance architecture.

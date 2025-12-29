@@ -4,17 +4,18 @@
 - Chapter 9 — Practice Exams & Review
 
 ## Domain 1 Topics to Revisit
-- ⬜ Azure AD identities
-- ⬜ RBAC scopes + inheritance
-- ⬜ PIM + Access Reviews
-- ⬜ Storage security + Private Endpoints
-- ⬜ Policy + Management Groups
-- ⬜ Governance hierarchy
+- Azure AD identities
+- RBAC scopes + inheritance
+- PIM + Access Reviews
+- Storage security + Private Endpoints
+- Policy + Management Groups
+- Governance hierarchy
 
 ## Practice Questions
-- ⬜ Complete 20–30 AZ‑104 practice questions
-- ⬜ Mark incorrect answers
-- ⬜ Identify weak areas
+- Complete 20–30 AZ‑104 practice questions
+- Mark incorrect answers
+- Identify weak areas
+- Revisit relevant chapters or labs
 
 ## Weak Areas Identified
 - Identity:

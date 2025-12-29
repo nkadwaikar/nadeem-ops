@@ -10,12 +10,12 @@
 - Validate private connectivity
 
 ## Lab Steps
-1. Create Storage Account
+1. Create a Storage Account
 2. Configure replication (ZRS or GRS)
 3. Disable public access
-4. Create Private Endpoint
-5. Link Private DNS Zone
-6. Test access from VM
-7. Validate DNS:
+4. Create a Private Endpoint for the blob service
+5. Link the Private DNS Zone
+6. Test access from a VM
+7. Validate DNS resolution:
    ```bash
    nslookup <storageaccount>.blob.core.windows.net

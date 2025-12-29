@@ -7,7 +7,7 @@
 - Users + Groups
 - Entra Roles
 - PIM (eligible → active flow)
-- Managed Identity (VM)
+- VM with System‑Assigned Managed Identity
 
 ### Access Control Layer
 - RBAC scopes:
@@ -38,12 +38,12 @@
 - DNS resolution path
 - Identity authentication path
 
-### Diagram Layout (recommended)
-- Top: Management Group + Policies
-- Middle: Identity (Entra ID, PIM, RBAC)
-- Bottom Left: VM + Managed Identity
-- Bottom Right: Storage + Private Endpoint + DNS
-- Arrows:
-  - Identity → RBAC → Storage
-  - VM → Private Endpoint → Storage
-  - PIM → Role Activation
+### Recommended Diagram Layout
+- **Top:** Management Group + Policies  
+- **Middle:** Identity (Entra ID, PIM, RBAC)  
+- **Bottom Left:** VM + Managed Identity  
+- **Bottom Right:** Storage + Private Endpoint + DNS  
+- **Arrows:**  
+  - Identity → RBAC → Storage  
+  - VM → Private Endpoint → Storage  
+  - PIM → Role Activation  
