@@ -20,7 +20,7 @@
 
 ---
 
-# Lab Steps
+## Lab Steps
 
 ---
 
@@ -36,7 +36,13 @@ This user will be used to validate RBAC behavior.
 
 ## 2. Create Resource Group
 
-- **Resource group name:** `rg-identity-lab`
+1. Open **Azure Portal**  
+2. Search for **Resource groups**  
+3. Select **Create**  
+4. Fill in:
+  - **Name:** `rg-bootcamp`
+  - **Region:** your preferred region (e.g., East US)
+5. Click **Review + Create → Create**
 
 ---
 
@@ -54,16 +60,16 @@ Azure RBAC hierarchy:
 
 ### 3.2 Resource Group Scope (Actual Assignment)
 
-Assign Alex the **Contributor** role at the resource group scope. This level of access is required for the lab so he can create and manage resources inside `rg-identity-lab`.
+Assign Alex the **Contributor** role at the resource group scope. This level of access is required for the lab so he can create and manage resources inside `rg-bootcamp`.
 
 - **Role:** Contributor  
-- **Scope:** `rg-identity-lab`  
+- **Scope:** `rg-bootcamp`  
 - **Principal:** `alex.james@contoso.com`  
 
 #### Expected Behavior
 
 When Alex signs in:
-- Only `rg-identity-lab` is visible  
+- Only `rg-bootcamp` is visible  
 - No other RGs appear  
 - Attempts to access or create resources outside this RG result in **Access denied**  
 
@@ -77,11 +83,11 @@ Sign in as: `alex.james@contoso.com`
 
 **Steps:**
 1. Go to **Azure Portal → Resource Groups**  
-2. Confirm only `rg-identity-lab` is visible  
+2. Confirm only `rg-bootcamp` is visible  
 3. Attempt to:  
-   - View subscription settings  
-   - Create a resource outside the RG  
-   - Access another RG or resource  
+  - View subscription settings  
+  - Create a resource outside the RG  
+  - Access another RG or resource  
 
 **Expected Result:**  
 `Access denied` — confirms correct RBAC enforcement.
@@ -90,29 +96,46 @@ Sign in as: `alex.james@contoso.com`
 
 ## 5. Deploy VM with System‑Assigned Managed Identity (Admin)
 
-### VM Configuration
+### 5.1 VM Configuration
 
-- OS: Ubuntu Server 22.04 LTS  
-- Name: `vm-identity-lab`  
-- Resource Group: `rg-identity-lab`  
-- Region: East US2  
-- Size: Standard_B1s  
-- Disk: Standard HDD  
-- Authentication: Password  
-- Public IP: Enabled  
+1. Go to **Virtual machines**
+2. Select **Create → Azure virtual machine**
 
-### Enable Managed Identity
+**Basics tab**
+- Resource group: `rg-bootcamp`
+- VM name: `vm-bootcamp`
+- Region: same as RG
+- Image: **Ubuntu Server 22.04 LTS**
+- Size: Standard_B1s (cost‑effective)
+- Authentication: **SSH public key**
+- Username: `azureuser`
+- SSH key: **Generate new key pair** → name it `bootcamp-key`
 
-- Identity → **System-assigned = On**
+Click **Next** until **Review + Create**, then **Create**.  
+Download the SSH key when prompted.
 
-This allows the VM to authenticate to Azure resources without secrets.
+### 5.2 Enable Managed Identity
+
+1. Open **vm-bootcamp**
+2. Left menu → **Identity**
+3. Under **System assigned**, switch to **On**
+4. Click **Save**
+
+This identity will be used to authenticate to Azure without credentials.
+
+### 5.3 Connect to the VM
+
+1. Go to **vm-bootcamp**
+2. Select **Connect → SSH**
+3. Copy the SSH command
+4. Run it locally with your private key
 
 ---
 
 ## 6. Create Storage Account
 
-- Name: `stidentitylab1234`  
-- Resource Group: `rg-identity-lab`  
+- Name: `stbootcamp1234`  
+- Resource Group: `rg-bootcamp`  
 - Region: Same as VM  
 - Redundancy: LRS  
 - Account kind: StorageV2  
@@ -129,64 +152,14 @@ This allows the VM to authenticate to Azure resources without secrets.
 
 - **Scope:** Storage Account  
 - **Role:** Storage Blob Data Reader  
-- **Principal:** `vm-identity-lab` (Managed Identity)  
+- **Principal:** `vm-bootcamp` (Managed Identity)  
 
 **Effect:**  
 VM can **read** blobs but cannot write or delete.
 
 ---
 
-## 7.1 Least‑Privilege Validation (IAM Access Restrictions)
-
-When Alex signs in and opens:
-
-**Storage Account → Access Control (IAM)**
-
-### Expected Result
-
-Alex **cannot**:
-- Assign roles  
-- Remove roles  
-- Modify IAM  
-- View privileged assignments  
-
-### Reason
-
-Contributor **does not** include IAM permissions. IAM actions require:
-- **User Access Administrator**, or  
-- **Owner**, or  
-- **Global Administrator**
-
-Azure blocks IAM actions to prevent privilege escalation.
-
-### Outcome
-
-- RBAC is correctly scoped  
-- Least‑privilege is enforced  
-- Alex can manage resources but cannot modify IAM  
-
----
-
-## 8. Fixing Alex's Access (Correct Role Combination)
-
-To allow Alex to both **manage resources** and **assign RBAC roles**:
-
-- Keep **Contributor** at the `rg-identity-lab` scope  
-- Add **User Access Administrator** at the same scope  
-
-### 8.1 Delegation Model Used
-
-**Allow user to assign all roles except privileged administrator roles (Recommended)**
-
-This combination allows Alex to:
-- Create and manage resources (Contributor)  
-- Assign RBAC roles and manage IAM (User Access Administrator)  
-
-Removing Contributor would prevent Alex from creating resources, so **both roles are required**.
-
----
-
-## 9. Install Azure CLI (Required on Ubuntu VMs)
+## 8. Install Azure CLI (Required on Ubuntu VMs)
 
 Ubuntu VMs do **not** include Azure CLI by default. Install it:
 
@@ -200,21 +173,7 @@ Verify installation:
 az version
 ```
 
-### 9.1 Connect to the VM
-
-Use SSH from Cloud Shell or your local terminal:
-
-```bash
-ssh azureuser@<public-ip-of-vm>
-```
-
-Once connected, your prompt should look like:
-
-```bash
-azureuser@vm-identity-lab:~$
-```
-
-### 9.2 Authenticate Using the VM's Managed Identity
+### 8.1 Authenticate Using the VM's Managed Identity
 
 Run the following command **inside the VM**:
 
@@ -231,11 +190,9 @@ Azure returns a JSON object showing:
 
 This confirms the VM authenticated using its **system‑assigned managed identity**.
 
----
+### 8.2 Access the Storage Account Using RBAC (No Keys)
 
-### 9.3 Access the Storage Account Using RBAC (No Keys)
-
-*This is the moment of truth — confirming that the VM's system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets*
+Verify that the VM's managed identity can authenticate and read blob data **without** any keys, passwords, or secrets:
 
 ```bash
 az storage blob list \
@@ -246,9 +203,9 @@ az storage blob list \
 
 ---
 
-## 10. Troubleshooting Managed Identity Access
+## 9. Troubleshooting Managed Identity Access
 
-### 10.1 Issue: `az: command not found`
+### 9.1 Issue: `az: command not found`
 
 Azure CLI is not installed.
 
@@ -257,25 +214,19 @@ Azure CLI is not installed.
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
----
-
-### 10.2 Issue: `AuthorizationPermissionMismatch`
+### 9.2 Issue: `AuthorizationPermissionMismatch`
 
 The VM's managed identity does not have the required data‑plane role.
 
 **Fix:** Assign **Storage Blob Data Reader** at the storage account or container scope.
 
----
-
-### 10.3 Issue: `ResourceNotFound`
+### 9.3 Issue: `ResourceNotFound`
 
 Incorrect storage account or container name.
 
 **Fix:** Verify names in Azure Portal.
 
----
-
-### 10.4 Issue: Command falls back to account keys
+### 9.4 Issue: Command falls back to account keys
 
 **Cause:**
 - Not using `--auth-mode login`
@@ -287,20 +238,12 @@ Incorrect storage account or container name.
 
 ---
 
-### 10.5 Issue: `az login --identity` returns a user instead of service principal
+## 10. Clean Up Resources (Recommended)
 
-**Cause:** Running in Cloud Shell.
-
-**Fix:** SSH into the VM and retry.
-
----
-
-## 11. Clean Up Resources (Recommended)
-
-Once you have completed the lab and validated managed identity access, delete the resource group to avoid unnecessary costs:
+Once you have completed the lab, delete the resource group to avoid unnecessary costs:
 
 ```bash
 az group delete \
-  --name rg-identity-lab \
+  --name rg-bootcamp \
   --yes --no-wait
 ```
