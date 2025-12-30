@@ -177,21 +177,10 @@ This combination allows Alex to:
 
 Removing Contributor would prevent Alex from creating resources, so **both roles are required**.
 
----
-
-## 8. Validate Access Using Managed Identity (From the VM)
-
-This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
 
 ---
 
-## 8. Validate Access Using Managed Identity (From the VM)
-
-This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
-
----
-
-### 8.1 Connect to the VM
+### 8 Connect to the VM
 
 Use SSH from Cloud Shell or your local terminal:
 
@@ -200,21 +189,8 @@ ssh azureuser@<public-ip-of-vm>
 
 **Once connected, your prompt should look like:
 
-azureuser@vm-identity-lab:~$
+azureuser@vm-identity-lab:~$.
 
-----
-
-Great — here is the **fully updated, clean, copy‑paste‑ready Markdown** for **Step 8 onward**, now including the cleanup section as **8.6**.  
-This is the complete block you can drop straight into your Day 1 lab file.
-
----
-
-```markdown
-## 8. Validate Access Using Managed Identity (From the VM)
-
-This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
-
----
 
 ### 8.1 Connect to the VM
 
@@ -268,7 +244,7 @@ This confirms the VM authenticated using its **system‑assigned managed identit
 ---
 
 ### 8.4 Access the Storage Account Using RBAC (No Keys)
-
+*This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets
 ```bash
 az storage blob list \
   --account-name <storageaccountname> \
