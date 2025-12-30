@@ -179,7 +179,7 @@ Removing Contributor would prevent Alex from creating resources, so **both roles
 
 ---
 
-# 8. Validate Access Using Managed Identity (From the VM)
+# #8. Validate Access Using Managed Identity (From the VM)
 
 This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
 
