@@ -1,6 +1,7 @@
 # Day 1 — Notes & Key Takeaways
+## Day 1 — Notes & Key Takeaways
 
-## 1. Identity Hierarchy (Tenant → Directory → Subscription)
+### 1. Identity Hierarchy (Tenant → Directory → Subscription)
 
 - A Microsoft Entra **Tenant** has a **1:1 relationship** with the Entra Directory.
 - The Directory stores **Users, Groups, Devices, Service Principals, Managed Identities**.
@@ -8,12 +9,11 @@
 - Subscriptions inherit identity and RBAC from the Directory.
 - Resource Groups and Resources sit under the subscription and follow RBAC inheritance.
 
-**Takeaway:**  
-Identity lives at the **tenant level**, authorization lives at the **subscription/resource** level.
+**Takeaway:** Identity lives at the **tenant level**, authorization lives at the **subscription/resource** level.
 
 ---
 
-## 2. RBAC Scopes and Inheritance
+### 2. RBAC Scopes and Inheritance
 
 - RBAC hierarchy: **Subscription → Resource Group → Resource**.
 - Permissions flow **downward only**, never upward.
@@ -21,12 +21,11 @@ Identity lives at the **tenant level**, authorization lives at the **subscriptio
 - Resource Group roles apply only to resources inside that RG.
 - Resource-level roles enforce **least privilege** and override inherited permissions.
 
-**Takeaway:**  
-Assign roles at the **lowest scope possible** to reduce blast radius and maintain governance.
+**Takeaway:** Assign roles at the **lowest scope possible** to reduce blast radius and maintain governance.
 
 ---
 
-## 3. Privileged Administrator Roles (High-Impact)
+### 3. Privileged Administrator Roles (High-Impact)
 
 These roles have tenant-wide authority and must be tightly controlled:
 
@@ -41,12 +40,11 @@ These roles have tenant-wide authority and must be tightly controlled:
 - They require MFA and should be activated through **PIM**.
 - Assign sparingly to reduce risk and maintain compliance.
 
-**Takeaway:**  
-Privileged roles should be **rare, temporary, and monitored**.
+**Takeaway:** Privileged roles should be **rare, temporary, and monitored**.
 
 ---
 
-## 4. Job Function Roles (Operational, Least Privilege)
+### 4. Job Function Roles (Operational, Least Privilege)
 
 These roles support day-to-day operations without granting excessive access:
 
@@ -61,12 +59,11 @@ These roles support day-to-day operations without granting excessive access:
 - They limit blast radius by restricting access to specific resource types.
 - Ideal for DevOps, operations, and engineering teams.
 
-**Takeaway:**  
-Use job-function roles for operational tasks and reserve privileged roles for governance.
+**Takeaway:** Use job-function roles for operational tasks and reserve privileged roles for governance.
 
 ---
 
-## 5. Managed Identity Access Pattern (Day 1 Lab)
+### 5. Managed Identity Access Pattern (Day 1 Lab)
 
 - A **System-Assigned Managed Identity** is automatically created when enabled on a VM.
 - It allows the VM to authenticate to Azure services **without secrets or credentials**.
@@ -79,70 +76,72 @@ az storage blob list \
   --account-name <name> \
   --container-name <container> \
   --auth-mode login
+```
 
+---
 
-# Day 2 — Notes & Key Takeaways
+## Day 2 — Notes & Key Takeaways
 
-## 1. Key Vault Access Models (RBAC vs Access Policies)
+### 1. Key Vault Access Models (RBAC vs Access Policies)
+
 - Modern deployments should use **RBAC authorization**, not Access Policies.
 - RBAC integrates cleanly with Managed Identities and Azure AD roles.
 - Access Policies are legacy and harder to audit or govern.
 
-**Takeaway:**  
-RBAC-based Key Vault access is the recommended, future-proof model.
+**Takeaway:** RBAC-based Key Vault access is the recommended, future-proof model.
 
 ---
 
-## 2. Managed Identity + Key Vault Integration
-- VM’s system-assigned identity authenticates without secrets.
+### 2. Managed Identity + Key Vault Integration
+
+- VM's system-assigned identity authenticates without secrets.
 - Role required: **Key Vault Secrets User**.
 - Identity must be assigned at the **Key Vault scope**.
 - No need for Access Policies, SAS tokens, or client secrets.
 
-**Takeaway:**  
-Managed Identity + RBAC = secure, secretless authentication.
+**Takeaway:** Managed Identity + RBAC = secure, secretless authentication.
 
 ---
 
-## 3. Least-Privilege Enforcement
+### 3. Least-Privilege Enforcement
+
 - VM identity can **read** secrets but cannot write/delete.
 - Contributor (Alex) can see the Key Vault resource but **cannot** read secrets.
 - IAM actions require:
-  - User Access Administrator  
-  - Owner  
-  - Global Administrator  
+  - User Access Administrator
+  - Owner
+  - Global Administrator
 
-**Takeaway:**  
-Key Vault enforces strict separation between **control-plane** and **data-plane** permissions.
+**Takeaway:** Key Vault enforces strict separation between **control-plane** and **data-plane** permissions.
 
 ---
 
-## 4. RBAC Propagation Behavior
+### 4. RBAC Propagation Behavior
+
 - Role assignments may take **up to 5 minutes** to apply.
 - Secret retrieval may fail during propagation with:
   - `Forbidden`
   - `AuthorizationPermissionMismatch`
 
-**Takeaway:**  
-RBAC propagation delay is normal — always re-test after a few minutes.
+**Takeaway:** RBAC propagation delay is normal — always re-test after a few minutes.
 
 ---
 
-## 5. Common Troubleshooting Patterns
-- **Forbidden:** Missing RBAC role  
-- **VaultNotFound:** Wrong vault name or region  
-- **Identity mismatch:** Running `az login --identity` in Cloud Shell  
-- **Firewall issues:** Key Vault network restrictions enabled  
+### 5. Common Troubleshooting Patterns
 
-**Takeaway:**  
-Most Key Vault issues fall into identity, RBAC, or networking categories.
+- **Forbidden:** Missing RBAC role
+- **VaultNotFound:** Wrong vault name or region
+- **Identity mismatch:** Running `az login --identity` in Cloud Shell
+- **Firewall issues:** Key Vault network restrictions enabled
+
+**Takeaway:** Most Key Vault issues fall into identity, RBAC, or networking categories.
 
 ---
 
-## 6. Governance Alignment
+### 6. Governance Alignment
+
 - Key Vault centralizes secrets and enforces least privilege.
 - Managed Identity eliminates credential sprawl.
 - RBAC provides auditable, role-based access control.
 
-**Takeaway:**  
-Day 2 reinforces secure-by-default design principles for cloud workloads.
+**Takeaway:** Day 2 reinforces secure-by-default design principles for cloud workloads.
