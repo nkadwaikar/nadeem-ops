@@ -185,9 +185,163 @@ This is the moment of truth — confirming that the VM’s system‑assigned man
 
 ---
 
-## 8.1 Connect to the VM
+## 8. Validate Access Using Managed Identity (From the VM)
+
+This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
+
+---
+
+### 8.1 Connect to the VM
 
 Use SSH from Cloud Shell or your local terminal:
 
 ```bash
 ssh azureuser@<public-ip-of-vm>
+
+**Once connected, your prompt should look like:
+
+azureuser@vm-identity-lab:~$
+
+----
+
+Great — here is the **fully updated, clean, copy‑paste‑ready Markdown** for **Step 8 onward**, now including the cleanup section as **8.6**.  
+This is the complete block you can drop straight into your Day 1 lab file.
+
+---
+
+```markdown
+## 8. Validate Access Using Managed Identity (From the VM)
+
+This is the moment of truth — confirming that the VM’s system‑assigned managed identity can authenticate to Azure and read blob data **without** any keys, passwords, or secrets.
+
+---
+
+### 8.1 Connect to the VM
+
+Use SSH from Cloud Shell or your local terminal:
+
+```bash
+ssh azureuser@<public-ip-of-vm>
+```
+
+Once connected, your prompt should look like:
+
+```
+azureuser@vm-identity-lab:~$
+```
+
+---
+
+### 8.2 Install Azure CLI (Required on Ubuntu VMs)
+
+Ubuntu VMs do **not** include Azure CLI by default. Install it:
+
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+
+Verify installation:
+
+```bash
+az version
+```
+
+---
+
+### 8.3 Authenticate Using the VM’s Managed Identity
+
+Run the following command **inside the VM**:
+
+```bash
+az login --identity
+```
+
+**Expected Result:**  
+Azure returns a JSON object showing:
+
+- `"assignedIdentityInfo": "MSI"`
+- `"name": "systemAssignedIdentity"`
+- `"type": "servicePrincipal"`
+
+This confirms the VM authenticated using its **system‑assigned managed identity**.
+
+---
+
+### 8.4 Access the Storage Account Using RBAC (No Keys)
+
+```bash
+az storage blob list \
+  --account-name <storageaccountname> \
+  --container-name <containername> \
+  --auth-mode login
+```
+
+**Expected Result:**  
+- Blob list is returned successfully  
+- No storage account keys or SAS tokens are used  
+- No fallback warnings appear  
+- Access is granted purely through the **Storage Blob Data Reader** role  
+
+This confirms:
+- Managed Identity is working  
+- RBAC permissions are correct  
+- Least‑privilege access is enforced  
+
+---
+
+### 8.5 Troubleshooting Managed Identity Access
+
+#### **Issue: `az: command not found`**
+Azure CLI is not installed.
+
+Fix:
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+
+---
+
+#### **Issue: `AuthorizationPermissionMismatch`**
+The VM’s managed identity does not have the required data‑plane role.
+
+Fix: Assign **Storage Blob Data Reader** at the storage account or container scope.
+
+---
+
+#### **Issue: `ResourceNotFound`**
+Incorrect storage account or container name.
+
+Fix: Verify names in Azure Portal.
+
+---
+
+#### **Issue: Command falls back to account keys**
+Cause:
+- Not using `--auth-mode login`
+- Running from Cloud Shell instead of the VM
+
+Fix:
+- Run commands **inside the VM**
+- Always include:
+```bash
+--auth-mode login
+```
+
+---
+
+#### **Issue: `az login --identity` returns a user instead of service principal**
+Cause: Running in Cloud Shell.
+
+Fix: SSH into the VM and retry.
+
+---
+
+### 8.6 Clean Up Resources (Recommended)
+
+Once you have completed the lab and validated managed identity access, delete the resource group to avoid unnecessary costs:
+
+```bash
+az group delete \
+  --name rg-identity-lab \
+  --yes --no-wait
+```
