@@ -247,6 +247,18 @@ This validates:
 
 This is the exact pattern used by production workloads.
 
+--
+
+## 10. Clean Up Resources (Recommended)
+
+Once you have completed the lab, delete the resource group to avoid unnecessary costs:
+
+```bash
+az group delete \
+  --name rg-bootcamp \
+  --yes --no-wait
+```
+
 ---
 
 # 13. Troubleshooting Notes
@@ -275,6 +287,7 @@ az login --identity --allow-no-subscriptions
 ```
 
 ---
+
 
 # 14. Completion Criteria
 
