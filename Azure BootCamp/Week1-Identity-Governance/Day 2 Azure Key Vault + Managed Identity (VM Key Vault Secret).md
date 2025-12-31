@@ -1,19 +1,4 @@
-Here you go, Nadeem — a **cleaned, corrected, and properly formatted Markdown version** of your Day 2 file.  
-I fixed:
 
-- Heading hierarchy  
-- Spacing  
-- Code block formatting  
-- Horizontal rule consistency  
-- Section alignment  
-- List indentation  
-- Typography issues  
-
-This is now **portfolio‑ready**.
-
----
-
-```markdown
 # Day 2 — Azure Key Vault + Managed Identity (Admin Identity + VM Workload Identity)
 
 > This lab continues from **Day 1**, using the same VM (`vm-bootcamp`) and Resource Group (`rg-bootcamp`).  
