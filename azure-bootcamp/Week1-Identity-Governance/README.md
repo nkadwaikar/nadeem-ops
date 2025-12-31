@@ -36,8 +36,8 @@ This week includes seven hands‑on labs that build on each other. **Estimated t
 
 | Day | Topic | Duration | Lab Files |
 |-----|-------|----------|-----------|
-| **Day 1** | RBAC + Managed Identity + Storage | 1.5h | [`Day1-RBAC-MI-Storage/`](./Day1-RBAC-MI-Storage/) |
-| **Day 2** | Azure Key Vault + Managed Identity | 1.5h | [`Day2-KeyVault-MI/`](./Day2-KeyVault-MI/) |
+| **Day 1** | RBAC + Managed Identity + Storage | 1.5h | [`(./azure-bootcamp/Week1-Identity-Governance/01-rbac-basics.md)`](./Day1-RBAC-MI-Storage/) |
+| **Day 2** | Azure Key Vault + Managed Identity | 1.5h | [`(./azure-bootcamp/Week1-Identity-Governance/02-keyvault-managed-identity.md)`](./Day2-KeyVault-MI/) |
 | **Day 3** | Managed Identity → Storage (Blob Read Access) | 1.5h | Pending |
 | **Day 4** | RBAC Scopes Deep Dive | 1.5h | Pending |
 | **Day 5** | Azure AD Basics (Users, Groups, Roles) | 1.5h | Pending |
