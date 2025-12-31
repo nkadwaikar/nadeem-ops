@@ -55,7 +55,7 @@ A high-level view of the Boot Camp structure:
 ---
 
 ### **Week 1 — Identity & Governance**  
-[Identity, RBAC, Managed Identity](./Week1-Identity-Governance/)  
+[Identity, RBAC, Managed Identity](.azure-bootcamp/Week1-Identity-Governance/README.md)  
 - Entra ID fundamentals  
 - Role-Based Access Control (RBAC)  
 - Managed Identity patterns  
