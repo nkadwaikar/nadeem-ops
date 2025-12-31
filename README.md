@@ -62,17 +62,14 @@ These capstones are standalone portfolio pieces.
 - [Week 3 Capstone — Scalable Compute & App Service Architecture](./Azure%20BootCamp/Week3-Compute-Storage/capstone/)
 - [Week 4 Capstone — Monitoring & Backup Baseline](./Azure%20BootCamp/Week4-Monitoring-Governance/capstone/)
 
-</details>
-
 <details>
 <summary><strong>🧪 Featured Labs</strong></summary>
 
-- [Static Website on Azure Storage](./labs/storage-static-website/)
-- [Azure Front Door — Routing](./labs/frontdoor-routing/)
-- [Azure Front Door — Global Delivery](./labs/frontdoor-global/)
+- [Static Website on Azure Storage](./labs/Azure%20Front%20Door-Static%20Website%20Hosting%20Lab.md#azure-storage-static-website)
+- [Azure Front Door — Routing](./labs/Azure%20Front%20Door-Static%20Website%20Hosting%20Lab.md#azure-front-door--routing--global-delivery)
+- [Azure Front Door — Global Delivery](./labs/Azure%20Front%20Door-Static%20Website%20Hosting%20Lab.md#modern-cdn-delivery-front-door-standard)
 
 </details>
-
 <details>
 <summary><strong>🛠️ Upcoming Labs</strong></summary>
 
