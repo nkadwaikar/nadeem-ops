@@ -42,7 +42,7 @@ This pattern eliminates secrets entirely — the VM authenticates using Azure AD
 
 ## 📂 Capstone Folder
 
-Your capstone folder includes the core files needed to deploy and validate the architecture:
+capstone folder includes the core files needed to deploy and validate the architecture:
 
 - **architecture-diagram.drawio** — high‑level identity flow  
 - **main.bicep** — deploys the full environment  
