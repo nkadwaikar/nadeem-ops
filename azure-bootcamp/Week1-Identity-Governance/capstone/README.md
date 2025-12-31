@@ -1,6 +1,3 @@
-Perfect! Here’s your **fully polished, single-file Week 1 Capstone README.md**. It’s fully GitHub-ready, keeps your coffee/passion vibe, includes complete deployment steps, architecture diagram conventions, and AZ‑104 skill alignment.
-
-````markdown
 # 🏗️ Week 1 Capstone — Secure Workload Identity Architecture  
 ### *Zero secrets. Full control. Identity‑first.* ☕
 
@@ -78,51 +75,52 @@ The architecture includes:
 
 ---
 
-## 🚀 Deployment Steps (High-Level)
+## 🚀 Deployment Steps
 
-1. **Deploy the environment using Bicep**  
+### 1. Deploy the environment using Bicep
+
 ```bash
 az deployment group create --resource-group <rg-name> --template-file main.bicep
-````
+```
 
 This will deploy:
 
-* Virtual Machine with system-assigned Managed Identity
-* Key Vault in RBAC mode
-* Storage Account with a private container
+- Virtual Machine with system-assigned Managed Identity
+- Key Vault in RBAC mode
+- Storage Account with a private container
 
-2. **Assign RBAC roles**
+### 2. Assign RBAC roles
 
-* Key Vault Secrets User → VM managed identity
-* Storage Blob Data Reader → VM managed identity
+- Key Vault Secrets User → VM managed identity
+- Storage Blob Data Reader → VM managed identity
 
-3. **Add a secret to Key Vault**
+### 3. Add a secret to Key Vault
 
 ```bash
 az keyvault secret set --vault-name <keyvault-name> --name "app-secret" --value "mySuperSecretValue"
 ```
 
-4. **Upload a config file to Storage**
+### 4. Upload a config file to Storage
 
 ```bash
 az storage blob upload --account-name <storage-account> --container-name <container-name> --name "appsettings.json" --file ./appsettings.json
 ```
 
-5. **Validate access from the VM**
+### 5. Validate access from the VM
 
-* SSH into the VM and retrieve the secret:
+SSH into the VM and retrieve the secret:
 
 ```bash
 az vm run-command invoke --resource-group <rg-name> --name <vm-name> --command-id RunShellScript --scripts "az keyvault secret show --vault-name <keyvault-name> --name app-secret"
 ```
 
-* Download the blob using OAuth token:
+Download the blob using OAuth token:
 
 ```bash
 az storage blob download --container-name <container-name> --name "appsettings.json" --file ./downloaded-appsettings.json --auth-mode login --account-name <storage-account>
 ```
 
-> ☕ Optional: sip a coffee while your tokens flow — it’s oddly satisfying to see RBAC in action.
+> ☕ Optional: sip a coffee while your tokens flow — it's oddly satisfying to see RBAC in action.
 
 ---
 
@@ -141,11 +139,11 @@ az storage blob download --container-name <container-name> --name "appsettings.j
 
 From the VM, verify:
 
-* ✅ Can the VM retrieve a Key Vault secret? (`az keyvault secret show --name app-secret`)
-* ✅ Can the VM read a blob from Storage? (Download via SAS or OAuth)
-* ✅ Are no secrets stored on the VM?
-* ✅ Are RBAC roles scoped correctly? (`az role assignment list --scope <resource-id>`)
-* ✅ Does the Bicep deployment output expected values?
+- ✅ Can the VM retrieve a Key Vault secret? (`az keyvault secret show --name app-secret`)
+- ✅ Can the VM read a blob from Storage? (Download via SAS or OAuth)
+- ✅ Are no secrets stored on the VM?
+- ✅ Are RBAC roles scoped correctly? (`az role assignment list --scope <resource-id>`)
+- ✅ Does the Bicep deployment output expected values?
 
 > ☕ Optional: Validate with a coffee in hand — seeing tokens work feels rewarding.
 
@@ -153,10 +151,10 @@ From the VM, verify:
 
 ## 🎓 AZ-104 Skills Practiced
 
-* **Implement and manage Azure identities and governance** (RBAC, Managed Identity)
-* **Implement and manage storage** (Blob access, least-privilege roles)
-* **Monitor and troubleshoot Azure resources** (validation via CLI & tokens)
-* **Deploy infrastructure using Bicep** (IaC)
+- **Implement and manage Azure identities and governance** (RBAC, Managed Identity)
+- **Implement and manage storage** (Blob access, least-privilege roles)
+- **Monitor and troubleshoot Azure resources** (validation via CLI & tokens)
+- **Deploy infrastructure using Bicep** (IaC)
 
 ---
 
