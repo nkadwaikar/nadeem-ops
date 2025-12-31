@@ -55,7 +55,7 @@ A high-level view of the Boot Camp structure:
 ---
 
 ### **Week 1 — Identity & Governance**  
-[Identity, RBAC, Managed Identity](.azure-bootcamp/Week1-Identity-Governance/README.md)  
+[Identity, RBAC, Managed Identity](./Week1-Identity-Governance/README.md)  
 - Entra ID fundamentals  
 - Role-Based Access Control (RBAC)  
 - Managed Identity patterns  
@@ -96,10 +96,9 @@ A high-level view of the Boot Camp structure:
 ---
 
 ## ✅ Completed Days
-
-- **Day 1:** [RBAC, Managed Identity, Storage Access](./Week1-Identity-Governance/01-rbac-basics.md)  
-- **Day 2:** [Key Vault + Managed Identity](./Week1-Identity-Governance/02-keyvault-managed-identity.md)  
-- **Day 3:** Managed Identity → Storage Account (Blob Read Access) (Completed)  
+- **Day 1:** [RBAC, Managed Identity, Storage Access](./Week1-Identity-Governance/Day1-RBAC-Managed-Identity-Storage.md)
+- **Day 2:** [Key Vault + Managed Identity](./Week1-Identity-Governance/Day2-KeyVault-Managed-Identity.md)
+- **Day 3:** [Managed Identity → Storage Account (Blob Read Access)
 
 This list grows as the Boot Camp progresses.  
 > ☕ Some labs take longer — it’s okay to sip slowly and absorb the details.
