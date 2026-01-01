@@ -1,4 +1,3 @@
-<!-- filepath: vscode-vfs://github/nkadwaikar/nadeem-labs/README.md -->
 # 🚀 Cloud Engineering — Built With Precision (and the Occasional Coffee Spill ☕)
 
 A growing collection of Azure labs, architectures, and Boot Camp notes — written to stay clean, practical, and easy to revisit.  
