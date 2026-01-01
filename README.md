@@ -1,3 +1,4 @@
+<!-- filepath: vscode-vfs://github/nkadwaikar/nadeem-labs/README.md -->
 # 🚀 Cloud Engineering — Built With Precision (and the Occasional Coffee Spill ☕)
 
 A growing collection of Azure labs, architectures, and Boot Camp notes — written to stay clean, practical, and easy to revisit.  
@@ -12,7 +13,7 @@ This repository is designed for cloud engineers, architects, and certification c
 I work across identity, networking, compute, automation, and cloud security — and I enjoy turning complex Azure scenarios into clear, repeatable, real‑world implementations.
 
 My goal is simple:  
-Documentation that’s lightweight, structured, and friendly enough that *future me* doesn’t have to reverse‑engineer my own work — whether it’s a Monday morning or a late‑night coffee session.
+Documentation that's lightweight, structured, and friendly enough that *future me* doesn't have to reverse‑engineer my own work — whether it's a Monday morning or a late‑night coffee session.
 
 ---
 
@@ -118,12 +119,12 @@ A high‑level view of the Boot Camp structure:
 
 ## ✅ Completed Days (Growing List)
 
-- **Day 1:** [Identity Fundamentals + RBAC Basics](./azure-bootcamp/Week1-Identity-Governance/01-identity-rbac-basics.md)  
-- **Day 2:** [Managed Identity + Key Vault](./azure-bootcamp/Week1-Identity-Governance/02-managed-identity-keyvault.md)  
-- **Day 3:** Azure AD Roles + RBAC Scopes (coming soon)
+- **Day 1:** [Identity Fundamentals + RBAC Basics](./azure-bootcamp/Week1-Identity-Governance/01-rbac-basics.md)  
+- **Day 2:** [Managed Identity + Key Vault](./azure-bootcamp/Week1-Identity-Governance/02-keyvault-managed-identity.md)  
+- **Day 3:** [Azure AD Roles + RBAC Scopes](./azure-bootcamp/Week1-Identity-Governance/03-mi-storage-access.md)
 
 This list grows as the Boot Camp progresses.  
-> ☕ Some labs take longer — it’s okay to sip slowly and absorb the details.
+> ☕ Some labs take longer — it's okay to sip slowly and absorb the details.
 
 ---
 
@@ -181,4 +182,3 @@ This lab covers:
 - Monitor & maintain Azure resources  
 - Architect scalable, secure cloud solutions  
 
----
