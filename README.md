@@ -166,7 +166,7 @@ A high-level view of the Boot Camp structure:
 
 ## ✅ Completed Days (Growing List)
 - **Day 1:** [Identity Fundamentals + RBAC Basics](./azure-bootcamp/Week1-Identity-Governance/01-rbac-basics.md)  
-- **Day 2:** [Managed Identity + Key Vault](./azure-bootcamp/Week1-Identity-Governance/02-keyvault-managed-identity.md)  
+- **Day 2:** [Managed Identity + Key Vault](./azure-bootcamp/Week1-Identity-Governance/02-managed-identity-key-vault.md)  
 - **Day 3:** [Entra ID Roles + RBAC Scopes](./azure-bootcamp/Week1-Identity-Governance/03-azuread-roles-rbac-scopes.md)
 - **Day 4:** [04-locks-resource-policies.md](./azure-bootcamp/Week1-Identity-Governance/04-locks-resource-policies.md)
 
