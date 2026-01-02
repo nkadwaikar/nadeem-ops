@@ -435,3 +435,4 @@ Today you learned:
 
 **Day 2 — Managed Identity + Key Vault**  
 [02-managed Identity + Azure Key Vault (Secretless Authentication).md](./02-managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md)
+

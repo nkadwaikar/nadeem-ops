@@ -299,6 +299,7 @@ Optional but helpful:
 - Confirm no RGs are stuck in a locked state  
 
 ---
+---
 
 # **📘 Today You Learned**
 
@@ -316,11 +317,14 @@ Optional but helpful:
 
 ---
 
----
-
 ## ▶️ **Next Lab**
 
 **Day 5 — Access Validation & Identity Troubleshooting**  
 `05-access-validation.md`
 
 ---
+
+## 🔗 **Related Labs**
+
+- Day 3 — RBAC and Role Assignments  
+- Day 5 — Access Validation (Portal + CLI)

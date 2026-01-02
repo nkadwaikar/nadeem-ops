@@ -336,9 +336,21 @@ Today you learned:
 ✅ **OAuth token-based authentication** enables secure service-to-service communication  
 
 ---
-
 ## ▶️ Next Lab
 
 **Day 3 — Azure AD Roles + RBAC Scopes**  
 [03-azuread-roles-rbac-scopes.md](03-azuread-roles-rbac-scopes.md)
 
+## ⬅️ Previous Lab
+
+**Day 1 — Identity Fundamentals + RBAC Basics**  
+[01-identity-rbac-basics.md](01-identity-rbac-basics.md)
+
+---
+
+## 🔗 Related Resources
+
+- **Day 4 — Azure Locks + Resource Policies**  
+  [04-azure-locks-resource-policies.md](04-azure-locks-resource-policies.md)
+
+---

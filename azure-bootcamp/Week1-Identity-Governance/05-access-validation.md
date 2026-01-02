@@ -278,20 +278,6 @@ This mirrors real Landing Zone design.
 
 ---
 
-## 📘 **Today You Learned**
-
-- How to validate RBAC using Portal and CLI  
-- How locks override RBAC and block even Owners  
-- How policies override RBAC and block deployments  
-- How Managed Identity behaves across services  
-- How to test deny, audit, and read-only behaviors  
-- How to validate governance across multiple identity types  
-- How to compare restricted vs unrestricted environments  
-- How to test governance using real-world access paths  
-- How to confirm your Landing Zone governance model works end-to-end  
-
----
-
 ## 🧹 **Cleanup (Optional)**
 
 ### **1. Remove Locks**
@@ -314,8 +300,30 @@ This mirrors real Landing Zone design.
 
 ---
 
-## ▶️ **Next Lab**
 
-**Day 6 — Azure Monitor + Activity Logs**  
-`06-monitor-activity-logs.md`
+## 📘 **Today You Learned**
+
+- How to validate RBAC using Portal and CLI  
+- How locks override RBAC and block even Owners  
+- How policies override RBAC and block deployments  
+- How Managed Identity behaves across services  
+- How to test deny, audit, and read-only behaviors  
+- How to validate governance across multiple identity types  
+- How to compare restricted vs unrestricted environments  
+- How to test governance using real-world access paths  
+- How to confirm your Landing Zone governance model works end-to-end  
+
+---
+
+## ▶️ **Next Steps**
+
+### **Day 6 — Azure Monitor + Activity Logs**
+Continue to `06-monitor-activity-logs.md` to learn how to audit and monitor identity and governance activities across your environment.
+
+### 🔗 **Related Labs**
+- [Day 4 — Azure Locks + Resource Policies](04-locks-policies.md)
+- [Day 1 — RBAC Fundamentals](01-rbac-fundamentals.md)
+- [Day 2 — Managed Identities](02-managed-identities.md)
+- [Day 3 — Service Principals & Custom Roles](03-service-principals-custom-roles.md)
+
 
