@@ -41,12 +41,12 @@ This week includes seven hands-on labs that build on each other.
 | Day | Topic | Duration | Lab File |
 |-----|-------|----------|----------|
 | **Day 1** | Identity Fundamentals + RBAC Basics | 1.5h | [01-identity-fundamentals.md](./01-identity-fundamentals.md) |
-| **Day 2** | Managed Identity + Azure Key Vault (Secretless Authentication) | 1.5h | [02-managed Identity + Azure Key Vault (Secretless Authentication).md](./02-managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md) | |
+| **Day 2** | Managed Identity + Azure Key Vault (Secretless Authentication) | 1.5h | [02-managed identity + azure key vault (secretless authentication).md](./02-managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md) | |
 | **Day 3** | Azure AD Roles + RBAC Scopes | 1.5h | [03-azuread-roles-rbac-scopes.md](./03-azuread-roles-rbac-scopes.md) |
 | **Day 4** | Azure Locks + Resource Policies | 1.5h | [04-locks-resource-policies.md](./04-locks-resource-policies.md) |
 | **Day 5** | Access Validation (Portal + CLI) | 1.5h | [05-access-validation.md](./05-access-validation.md) |
 | **Day 6** | Azure Monitor + Activity Logs | 1.5h | [06-azure-monitor-activity-logs.md](./06-azuremonitor-activity-logs.md) |
-| **Day 7** | Bicep Deployment — Identity Stack | 1.5h | [07-bicep-beployment-identity-stack.md](./07-Bicep-Deployment-Identity-Stack.md) |
+| **Day 7** | Bicep Deployment — Identity Stack | 1.5h | [07-bicep-beployment-identity-stack.md](./07-bicep-deployment-identity-stack.md) |
 
 Each lab includes step-by-step instructions, validation steps, troubleshooting patterns, and CLI/Portal walkthroughs.
 
