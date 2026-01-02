@@ -132,46 +132,39 @@ Expected:
 
 ---
 
-// ...existing code...
-
-## 📌 **Day 3 Summary**
+## 📌 Day 3 Summary
 
 Today you learned:
 
-- The difference between **Microsoft Entra ID roles** and **Azure RBAC roles**
-- How directory roles affect identity management
-- How RBAC roles affect resource access
-- How scope inheritance works
-- How control‑plane and data‑plane permissions differ
-- Why least‑privilege requires both systems to be configured correctly
-- That **User Administrator can reset passwords for standard users**, but only when:
-  - MFA is configured (if required by tenant policy)  
-  - The target user is not a privileged admin  
-  - The admin is not resetting their own password  
-  - Administrative Units or PIM do not restrict access  
+- How **Microsoft Entra ID roles** and **Azure RBAC roles** differ
+- How **directory roles** affect identity management
+- How **RBAC roles** affect resource access
+- How **scope inheritance** works across control and data planes
+- How **control-plane and data-plane permissions** differ in Azure
+- Why **least-privilege** requires both systems to be configured correctly
+- How **User Administrator** can reset passwords for standard users (with MFA, non-admin targets, and non-self restrictions)
 
+---
 These nuances reflect real enterprise identity governance and are essential for AZ‑104, AZ‑305, and AZ‑500.
-
----
-
-## ⬅️ Previous Lab
-
-**Day 1 — Identity Fundamentals + RBAC Basics**  
-[01-identity-rbac-basics.md](01-identity-rbac-basics.md)
-
----
-
-## 🔗 Related Labs
-
-- **Day 2 — Managed Identity + Key Vault**  
-  [02-managed-identity-keyvault.md](02-managed-identity-keyvault.md)
-
-- **Day 4 — Azure Locks + Resource Policies**  
-  [04-locks-resource-policies.md](04-locks-resource-policies.md)
 
 ---
 
 ## ▶️ Next Lab
 
 **Day 4 — Azure Locks + Resource Policies**  
-[04-locks-resource-policies.md](04-locks-resource-policies.md)
+[04-azurelocks-resource-policies.md](04-azurelocks-resource-policies.md)
+
+## ⬅️ Previous Lab
+
+**Day 2 — Managed Identity + Azure Key Vault**  
+[02-managed-identity-azure-key-vault.md](02-managed-identity-azure-key-vault.md)
+
+---
+
+## 🔗 Related Resources
+
+- **Day 1 — Identity Fundamentals + RBAC Basics**  
+  [01-identity-rbac-basics.md](01-identity-rbac-basics.md)
+
+- **Day 5 — Access Validation (Portal + CLI)**  
+  [05-access-validation.md](05-access-validation.md)

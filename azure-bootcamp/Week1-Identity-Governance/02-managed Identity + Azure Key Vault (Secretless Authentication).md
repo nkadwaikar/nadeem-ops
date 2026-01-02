@@ -326,14 +326,13 @@ az group delete \
 
 ## 📌 Day 2 Summary
 
-
 Today you learned:
 
-✅ **System-assigned managed identities** provide automatic identity management for Azure resources  
-✅ **Azure Key Vault with RBAC** offers centralized secret management with granular access control  
-✅ **RBAC role assignments** enable least-privilege access patterns  
-✅ **Secretless authentication** eliminates the need to store credentials in code or configuration  
-✅ **OAuth token-based authentication** enables secure service-to-service communication  
+- How **system-assigned managed identities** provide automatic identity management for Azure resources
+- How **Azure Key Vault with RBAC** offers centralized secret management with granular access control
+- How **RBAC role assignments** enable least-privilege access patterns
+- How **secretless authentication** eliminates the need to store credentials in code or configuration
+- How **OAuth token-based authentication** enables secure service-to-service communication
 
 ---
 ## ▶️ Next Lab
@@ -351,6 +350,7 @@ Today you learned:
 ## 🔗 Related Resources
 
 - **Day 4 — Azure Locks + Resource Policies**  
-  [04-azure-locks-resource-policies.md](04-azure-locks-resource-policies.md)
+  [04-azurelocks-resource-policies.md](04-azurelocks-resource-policies.md)
 
----
+- **Day 5 — Access Validation (Portal + CLI)**  
+  [05-access-validation.md](05-access-validation.md)

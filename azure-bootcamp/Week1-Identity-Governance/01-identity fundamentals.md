@@ -404,35 +404,32 @@ az ad user show --id alex.james@contoso.com 2>/dev/null || echo "User deleted"
 
 ---
 
-## 📦 What You Built
-
-By completing this lab, you have:
-
-- ✅ Created a test user (`alex.james@contoso.com`) with no admin privileges
-- ✅ Created a resource group (`rg-bootcamp`) as an isolated scope
-- ✅ Assigned the Contributor role at Resource Group scope
-- ✅ Validated least-privilege access behavior
-- ✅ Tested RBAC inheritance from RG to resources
-- ✅ Observed access denial outside the assigned scope
-- ✅ Troubleshot common RBAC issues
-
-This demonstrates **foundational RBAC patterns** used in production Azure environments to implement **Zero Trust** and **least-privilege** access models.
-
----
-
 ## 📌 Day 1 Summary
 
 Today you learned:
 
-- ✅ How **Azure identity hierarchy** works (users → groups → service principals)
-- ✅ How **RBAC scopes** and **inheritance** behave (Subscription → RG → Resource)
-- ✅ How to assign roles using **Azure Portal** and **Azure CLI**
-- ✅ How **least-privilege access** is enforced through scoping
-- ✅ How to **validate and troubleshoot** RBAC assignments
+- How **Azure identity hierarchy** works (users → groups → service principals)
+- How **RBAC scopes** and **inheritance** behave (Subscription → RG → Resource)
+- How to assign roles using **Azure Portal** and **Azure CLI**
+- How **least-privilege access** is enforced through scoping
+- How to **validate and troubleshoot** RBAC assignments
+
 ---
+
 
 ## ▶️ Next Lab
 
-**Day 2 — Managed Identity + Key Vault**  
-[02-managed Identity + Azure Key Vault (Secretless Authentication).md](./02-managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md)
+**Day 2 — Managed Identity + Azure Key Vault**  
+[02-managed-identity-azure-key-vault.md](02-managed-identity-azure-key-vault.md)
 
+---
+
+## 🔗 Related Resources
+
+- **Day 3 — Azure AD Roles + RBAC Scopes**  
+  [03-azuread-roles-rbac-scopes.md](03-azuread-roles-rbac-scopes.md)
+
+- **Day 4 — Azure Locks + Resource Policies**  
+  [04-azurelocks-resource-policies.md](04-azurelocks-resource-policies.md)
+
+---

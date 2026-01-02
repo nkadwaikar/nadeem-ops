@@ -299,32 +299,40 @@ Optional but helpful:
 - Confirm no RGs are stuck in a locked state  
 
 ---
+## 📌 Day 4 Summary
+
+Today you learned:
+
+- How to apply **Delete** and **Read-only** locks at different scopes
+- How **lock inheritance** works and why resource-level tests must be isolated
+- How locks override RBAC and prevent accidental changes
+- How to build and assign a **Custom Audit Policy** to detect missing tags on resource groups
+- Why Azure does **not** provide a built-in "Require tag on resource groups" policy
+- How Audit policies provide visibility without blocking deployments
+- How to enforce VM governance using the **Allowed virtual machine size SKUs** policy
+- How Azure Policy dynamically **filters the VM size dropdown** to show only compliant SKUs
+- How to compare behavior between **policy-restricted** and **policy-free** resource groups
+- How governance controls (Locks + Policy) work together with RBAC to form a complete governance model
+- How SKU governance requires tuning because default images often select disallowed SKUs
+  
 ---
 
-# **📘 Today You Learned**
+## ▶️ Next Lab
 
-- How to apply **Delete** and **Read‑only** locks at different scopes  
-- How **lock inheritance** works and why resource‑level tests must be isolated  
-- How locks override RBAC and prevent accidental changes  
-- How to build and assign a **Custom Audit Policy** to detect missing tags on resource groups  
-- Why Azure does **not** provide a built‑in "Require tag on resource groups" policy  
-- How Audit policies provide visibility without blocking deployments  
-- How to enforce VM governance using the **Allowed virtual machine size SKUs** policy  
-- How Azure Policy dynamically **filters the VM size dropdown** to show only compliant SKUs  
-- How to compare behavior between **policy‑restricted** and **policy‑free** resource groups  
-- How governance controls (Locks + Policy) work together with RBAC to form a complete governance model  
-- How SKU governance requires tuning because default images often select disallowed SKUs  
+**Day 5 — Access Validation (Portal + CLI)**  
+[05-access-validation.md](05-access-validation.md)
+
+## ⬅️ Previous Lab
+
+**Day 3 — Azure AD Roles + RBAC Scopes**  
+[03-azuread-roles-rbac-scopes.md](03-azuread-roles-rbac-scopes.md)
 
 ---
 
-## ▶️ **Next Lab**
+## 🔗 Related Resources
 
-**Day 5 — Access Validation & Identity Troubleshooting**  
-`05-access-validation.md`
+- **Day 1 — Identity Fundamentals + RBAC Basics**  
+  [01-identity-rbac-basics.md](01-identity-rbac-basics.md)
 
----
-
-## 🔗 **Related Labs**
-
-- Day 3 — RBAC and Role Assignments  
-- Day 5 — Access Validation (Portal + CLI)
+- **Day 2 — Managed Identity + Azure Key Vault**  
+  [02-managed-identity-azure-key-vault.md](02-managed-identity-azure-key-vault.md)

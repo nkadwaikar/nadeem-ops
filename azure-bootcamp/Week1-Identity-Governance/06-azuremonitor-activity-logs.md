@@ -253,19 +253,6 @@ You now have a complete observability baseline.
 
 ---
 
-# 📘 **Today You Learned**
-
-- How to enable Activity Logs and Diagnostic Settings  
-- How to route logs to a Log Analytics Workspace  
-- How to query logs using KQL  
-- How to observe RBAC, lock, and policy events  
-- How to validate deny, audit, and identity access events  
-- How to build an observability layer for Landing Zones  
-- How to correlate governance events across services  
-- How to confirm your identity-first architecture is fully auditable  
-
----
-
 # 🧹 **Cleanup (Optional)**
 
 ### **1. Remove Diagnostic Settings**
@@ -283,7 +270,20 @@ From RGs, VMs, Key Vault.
 - Custom Audit Policy  
 - Allowed VM Size SKUs  
 
----
+## 📌 Day 6 Summary
+
+Today you learned:
+
+- How to enable Activity Logs and Diagnostic Settings
+- How to route logs to a Log Analytics Workspace
+- How to query logs using KQL
+- How to observe RBAC, lock, and policy events
+- How to validate deny, audit, and identity access events
+- How to build an observability layer for Landing Zones
+- How to correlate governance events across services
+- How to confirm your identity-first architecture is fully auditable
+
+--
 
 ## ▶️ **Next Lab**
 

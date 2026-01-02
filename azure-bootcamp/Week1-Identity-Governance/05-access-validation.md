@@ -300,30 +300,41 @@ This mirrors real Landing Zone design.
 
 ---
 
+## 📌 Day 5 Summary
 
-## 📘 **Today You Learned**
+Today you learned:
 
-- How to validate RBAC using Portal and CLI  
-- How locks override RBAC and block even Owners  
-- How policies override RBAC and block deployments  
-- How Managed Identity behaves across services  
-- How to test deny, audit, and read-only behaviors  
-- How to validate governance across multiple identity types  
-- How to compare restricted vs unrestricted environments  
-- How to test governance using real-world access paths  
-- How to confirm your Landing Zone governance model works end-to-end  
+- How to validate **RBAC** using Portal and CLI
+- How **locks override RBAC** and block even Owners
+- How **policies override RBAC** and block deployments
+- How **Managed Identity** behaves across services
+- How to test **deny, audit, and read-only** behaviors
+- How to validate governance across multiple identity types
+- How to compare **restricted vs unrestricted** environments
+- How to test governance using real-world access paths
+- How to confirm your **Landing Zone governance model** works end-to-end
 
 ---
 
-## ▶️ **Next Steps**
+## ▶️ Next Lab
 
-### **Day 6 — Azure Monitor + Activity Logs**
-Continue to `06-monitor-activity-logs.md` to learn how to audit and monitor identity and governance activities across your environment.
+**Day 6 — Azure Monitor + Activity Logs**  
+[06-azuremonitor-activity-logs.md](06-azuremonitor-activity-logs.md)
 
-### 🔗 **Related Labs**
-- [Day 4 — Azure Locks + Resource Policies](04-locks-policies.md)
-- [Day 1 — RBAC Fundamentals](01-rbac-fundamentals.md)
-- [Day 2 — Managed Identities](02-managed-identities.md)
-- [Day 3 — Service Principals & Custom Roles](03-service-principals-custom-roles.md)
+## ⬅️ Previous Lab
 
+**Day 4 — Azure Locks + Resource Policies**  
+[04-locks-resource-policies.md](04-locks-resource-policies.md)
 
+---
+
+## 🔗 Related Resources
+
+- **Day 1 — Identity Fundamentals + RBAC Basics**  
+  [01-identity-rbac-basics.md](01-identity-rbac-basics.md)
+
+- **Day 2 — Managed Identity + Azure Key Vault**  
+  [02-managed-identity-azure-key-vault.md](02-managed-identity-azure-key-vault.md)
+
+- **Day 3 — Azure AD Roles + RBAC Scopes**  
+  [03-azuread-roles-rbac-scopes.md](03-azuread-roles-rbac-scopes.md)
