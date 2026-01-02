@@ -171,6 +171,7 @@ A high-level view of the Boot Camp structure:
 - **Day 3:** [Entra ID Roles + RBAC Scopes](./azure-bootcamp/Week1-Identity-Governance/03-azuread-roles-rbac-scopes.md)
 - **Day 4:** [Locks + Policy](./azure-bootcamp/Week1-Identity-Governance/04-locks-resource-policies.md)
 - **Day 5:** [Access Validation](./azure-bootcamp/Week1-Identity-Governance/05-access-validation.md)
+- **Day 6:** [Monitor + Logs](./azure-bootcamp/Week1-Identity-Governance/06-azuremonitor-activity-logs.md)
 
 This list grows as the Boot Camp progresses.  
 > ☕ Some labs take longer — it's okay to sip slowly and absorb the details.

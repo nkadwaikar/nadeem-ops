@@ -45,7 +45,7 @@ This week includes seven hands-on labs that build on each other.
 | **Day 3** | Azure AD Roles + RBAC Scopes | 1.5h | [03-azuread-roles-rbac-scopes.md](./03-azuread-roles-rbac-scopes.md) |
 | **Day 4** | Azure Locks + Resource Policies | 1.5h | [04-locks-resource-policies.md](./04-locks-resource-policies.md) |
 | **Day 5** | Access Validation (Portal + CLI) | 1.5h | [05-access-validation.md](./05-access-validation.md) |
-| **Day 6** | Azure Monitor + Activity Logs | 1.5h | [06-Azure-Monitor-Activity-Logs.md](./06-Azure-Monitor-Activity-Logs.md) |
+| **Day 6** | Azure Monitor + Activity Logs | 1.5h | [06-Azure-Monitor-Activity-Logs.md](./06-azuremonitor-activity-logs.md) |
 | **Day 7** | Bicep Deployment — Identity Stack | 1.5h | [07-Bicep-Deployment-Identity-Stack.md](./07-Bicep-Deployment-Identity-Stack.md) |
 
 Each lab includes step-by-step instructions, validation steps, troubleshooting patterns, and CLI/Portal walkthroughs.
