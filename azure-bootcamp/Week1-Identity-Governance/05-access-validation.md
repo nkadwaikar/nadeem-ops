@@ -319,18 +319,3 @@ This mirrors real Landing Zone design.
 **Day 6 — Azure Monitor + Activity Logs**  
 `06-monitor-activity-logs.md`
 
----
-
-## 🔗 **Related Labs**
-
-- **Day 1 — RBAC Basics**  
-  [`01-rbac-basics.md`](./01-rbac-basics.md)
-
-- **Day 2 — Key Vault + Managed Identity**  
-  [`02-keyvault-managed-identity.md`](./02-keyvault-managed-identity.md)
-
-- **Day 3 — Identity-First VM Deployment**  
-  [`03-identity-first-vm.md`](./03-identity-first-vm.md)
-
-- **Day 4 — Azure Locks + Resource Policies**  
-  [`04-locks-resource-policies.md`](./04-locks-resource-policies.md)

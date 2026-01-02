@@ -434,5 +434,5 @@ Today you learned:
 ## ▶️ Next Lab
 
 Continue to **Day 2 — Managed Identity + Key Vault**  
-📖 [02-Managed Identity + Key Vault](./02-Managed-Identity-and-Key-Vault.md)
+📖 [02-Managed-Identity-Key-Vault.md](./02-managed Identity + Azure Key Vault (Secretless Authentication).md)
 

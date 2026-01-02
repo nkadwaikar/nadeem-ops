@@ -160,8 +160,3 @@ These nuances reflect real enterprise identity governance and are essential for 
 **Day 4 — Azure Locks + Resource Policies**  
 [04-locks-resource-policies.md](04-locks-resource-policies.md)
 
-
-## 🔗 Related Labs
-
-- [Day 1 — RBAC Basics](01-rbac-basics.md)
-- [Day 2 — Key Vault + Managed Identity](02-keyvault-managed-identity.md)

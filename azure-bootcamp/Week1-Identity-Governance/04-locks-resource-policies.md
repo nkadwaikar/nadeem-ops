@@ -324,14 +324,3 @@ Optional but helpful:
 `05-access-validation.md`
 
 ---
-
-## 🔗 **Related Labs**
-
-- **Day 1 — RBAC Basics**  
-  `01-rbac-basics.md`
-
-- **Day 2 — Key Vault + Managed Identity**  
-  `02-keyvault-managed-identity.md`
-
-- **Day 3 — Identity-First VM Deployment**  
-  `03-identity-first-vm.md`
