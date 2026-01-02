@@ -1,4 +1,4 @@
-<!-- filepath: vscode-vfs://github/nkadwaikar/nadeem-labs/Final%20Project/README.md -->
+
 # ☕ Final Project — The Secure Customer Portal (Enterprise Edition)
 Every great Boot Camp deserves a grand finale — and this one brings together everything from Weeks 1–8 into a **real‑world, enterprise‑grade challenge**.  
 Think of it as the moment when all the coffee, late‑night debugging, and identity‑first discipline finally pay off.
