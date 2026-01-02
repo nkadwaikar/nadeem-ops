@@ -434,5 +434,5 @@ Today you learned:
 ## ▶️ Next Lab
 
 Continue to **Day 2 — Managed Identity + Key Vault**  
-📖 [02-managed-identity-keyvault.md](./02-managed-identity-keyvault.md)
+📖 [02-Managed Identity + Key Vault](./02-Managed-Identity-and-Key-Vault.md)
 

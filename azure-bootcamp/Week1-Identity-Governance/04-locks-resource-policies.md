@@ -316,13 +316,14 @@ Optional but helpful:
 
 ---
 
+---
+
 ## ▶️ **Next Lab**
 
 **Day 5 — Access Validation & Identity Troubleshooting**  
 `05-access-validation.md`
 
 ---
-// ...existing code... (lines 1-352)
 
 ## 🔗 **Related Labs**
 

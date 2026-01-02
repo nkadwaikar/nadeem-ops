@@ -345,4 +345,4 @@ Continue to [03-azuread-roles-rbac-scopes.md](03-azuread-roles-rbac-scopes.md)
 
 ## 🔗 Related Labs
 
-- [Day 1 — RBAC Basics](01-rbac-basics.md)
+- [Day 1 — RBAC Basics](01-identity-rbac-basics.md)

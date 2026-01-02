@@ -155,11 +155,10 @@ These nuances reflect real enterprise identity governance and are essential for 
 ---
 
 
-
 ## ▶️ Next Lab
 
 **Day 4 — Azure Locks + Resource Policies**  
-`04-locks-resource-policies.md`
+[04-locks-resource-policies.md](04-locks-resource-policies.md)
 
 
 ## 🔗 Related Labs

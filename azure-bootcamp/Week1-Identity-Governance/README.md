@@ -41,7 +41,7 @@ This week includes seven hands-on labs that build on each other.
 | Day | Topic | Duration | Lab File |
 |-----|-------|----------|----------|
 | **Day 1** | Identity Fundamentals + RBAC Basics | 1.5h | [01-Identity Fundamentals.md](./01-Identity%20Fundamentals.md) |
-| **Day 2** | Managed Identity + Key Vault | 1.5h | [02-keyvault-managed-identity.md](./02-keyvault-managed-identity.md) |
+| **Day 2** | Managed Identity + Azure Key Vault (Secretless Authentication) | 1.5h | [02-Managed Identity + Azure Key Vault (Secretless Authentication).md](./02-Managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md) |
 | **Day 3** | Azure AD Roles + RBAC Scopes | 1.5h | [03-azuread-roles-rbac-scopes.md](./03-azuread-roles-rbac-scopes.md) |
 | **Day 4** | Azure Locks + Resource Policies | 1.5h | [04-locks-resource-policies.md](./04-locks-resource-policies.md) |
 | **Day 5** | Access Validation (Portal + CLI) | 1.5h | [05-access-validation.md](./05-access-validation.md) |
