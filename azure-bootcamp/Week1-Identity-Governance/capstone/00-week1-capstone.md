@@ -1,7 +1,6 @@
 # 🏗️ **Week 1 Capstone — Identity‑First, Governance‑Ready Landing Zone**  
 ### *Zero secrets. Zero trust. Fully governed. Fully observable.*
 
-> **📌 Status:** Coming Soon  
 > This is my Week 1 capstone for the Azure Bootcamp.  
 > The full implementation will be published once all validation steps and diagrams are complete.
 
