@@ -221,7 +221,9 @@ All written with the same care I put into my coffee — precise, consistent, and
 ## 📘 Featured Labs
 
 ### **Azure Front Door — Routing & Global Delivery**  
-📖 *Coming Soon*
+A complete, production‑aligned lab covering global routing, origin configuration, caching behavior, and end‑to‑end validation for static and dynamic workloads.
+
+📄 [View Lab Guide](labs/azure-front-door-routing-global-delivery.md)
 
 ---
 
