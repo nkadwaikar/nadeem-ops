@@ -36,6 +36,16 @@ Before starting Week 1, ensure you have:
 This week includes hands-on labs that build on each other.  
 **Estimated time: ~1.5 hours per lab.**
 
+| Day | Topic | Lab File |
+|-----|-------|----------|
+| **Day 1** | Identity Fundamentals | [01-identity-fundamentals.md](docs/01-identity-fundamentals.md) |
+| **Day 2** | Managed Identity + Key Vault | [02-managed-identity-keyvault.md](docs/02-managed-identity-keyvault.md) |
+| **Day 3** | Azure AD Roles, RBAC & Scopes | [03-azuread-roles-rbac-scopes.md](docs/03-azuread-roles-rbac-scopes.md) |
+| **Day 4** | Azure Locks + Resource Policies | [04-azurelocks-resource-policies.md](docs/04-azurelocks-resource-policies.md) |
+| **Day 5** | Access Validation | [05-access-validation.md](docs/05-access-validation.md) |
+| **Day 6** | Azure Monitor + Activity Logs | [06-azuremonitor-activity-logs.md](docs/06-azuremonitor-activity-logs.md) |
+| **Day 7** | Bicep Deployment - Identity Stack | [07-bicep-deployment-identity-stack.md](docs/07-bicep-deployment-identity-stack.md) |
+
 Each lab includes step-by-step instructions, validation steps, troubleshooting patterns, and CLI/Portal walkthroughs.
 
 ---
@@ -57,23 +67,20 @@ This capstone demonstrates:
 - Modular Bicep deployment  
 - End-to-end validation  
 
-📁 **Capstone folder:**  
-`capstone/`
+📁 **Capstone Documentation:**
 
-Includes:
-
-- Modular Bicep deployment (`bicep/`)  
-- RBAC assignments  
-- Identity-first access flow  
-- Governance flow  
-- Full walkthrough in [Week 1 Capstone](capstone/week1-capstone.md)
-
-**Supporting documentation:**
-
+- 🏗️ [Week 1 Capstone Overview](capstone/week1-capstone.md)
 - 📘 [VS Code Deployment Workflow](capstone/docs/vscode-deployment-workflow.md)  
 - 🔐 [Identity-First Access Flow](capstone/docs/identity-first-access-flow.md)  
 - 🛡️ [Governance Flow Diagram](capstone/docs/governance-flow.md)  
 - 📝 [Lessons Learned](capstone/docs/week1-lessons-learned.md)
+
+📁 **Capstone Implementation:**
+
+- Modular Bicep deployment (`capstone/bicep/`)  
+- RBAC assignments  
+- Resource locks  
+- Governance controls  
 
 ---
 

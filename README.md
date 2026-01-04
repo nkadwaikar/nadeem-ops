@@ -1,5 +1,7 @@
 # 🚀 Cloud Engineering — Built With Precision (and the Occasional Coffee Spill ☕)
 
+🚧 **Currently Building: Week 2 — Networking & Security**
+
 A growing collection of Azure labs, architectures, and Boot Camp notes — written to stay clean, practical, and easy to revisit.  
 Built for the days when the cloud behaves, and the days when it needs a little extra coffee (or encouragement).
 
@@ -38,32 +40,48 @@ All written with the same care I put into my coffee — precise, consistent, and
 
 ---
 
-## 🧪 How to Use This Repository
-
-You can use this repo in two ways:
-
-### **1. Follow the Boot Camp**
-Start at Week 1 and progress through the labs and capstone projects.
-
-### **2. Use it as a Reference**
-Jump directly to specific services, architectures, or labs.
-
-Each lab includes:
-
-- Prerequisites  
-- Step-by-step deployment  
-- Validation and troubleshooting  
-- Architecture context  
-- Cleanup guidance  
-
-> ☕ Pro tip: Keep a cup of coffee nearby — some labs are best enjoyed with caffeine and curiosity.
-
----
-
 # 🧭 Full Multi-Week Roadmap  
-### *Portfolio-Ready. Certification-Aligned. Enterprise-Focused.*
+*Portfolio-Ready. Certification-Aligned. Enterprise-Focused.*
 
-A high-level view of the Boot Camp structure:
+## 🗺️ Visual Roadmap — Azure Boot Camp (8 Weeks)
+
+```plaintext
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           AZURE BOOT CAMP ROADMAP                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+   Week 1 → Identity & Governance
+      - RBAC, Managed Identity, Key Vault, Policy, Locks
+      - Capstone: Identity-First Landing Zone
+
+   Week 2 → Networking & Security
+      - VNets, Subnets, NSGs, Private Endpoints, DNS, Firewall
+      - Capstone: Secure Hub-Spoke Architecture
+
+   Week 3 → Compute, App Services & Storage
+      - VMs, App Services, Storage, Load Balancing
+      - Capstone: 3-Tier Application Deployment
+
+   Week 4 → Monitoring, Backup & Automation
+      - Azure Monitor, Logs, Alerts, Backup, Automation
+      - Capstone: Monitoring & Automation Baseline
+
+   Week 5 → Security Engineering (AZ-500)
+      - Defender, PIM, Sentinel, SOAR, Identity Protection
+      - Capstone: Security Operations Architecture
+
+   Week 6 → Enterprise Architecture & Cost Governance
+      - MG Hierarchy, Budgets, Policy, Deployment Stacks
+      - Capstone: Enterprise Baseline Architecture
+
+   Week 7 → Architecture Deep Dive (AZ-305)
+      - Hybrid Identity, Data, BCDR, API Mgmt, Integration Patterns
+      - Capstone: Enterprise Architecture Case Study
+
+   Week 8 → Azure Landing Zone (Full Build)
+      - Identity, Network, Security, Monitoring Baselines
+      - Capstone: Full Landing Zone Deployment (Bicep)
+```
 
 ---
 
@@ -72,7 +90,7 @@ A high-level view of the Boot Camp structure:
 📘 **Overview:** [Week 1 README](azure-bootcamp/Week1-Identity-Governance/README.md)  
 🏗️ **Capstone:** [Identity-First Landing Zone](azure-bootcamp/Week1-Identity-Governance/capstone/week1-capstone.md)
 
-Covers:
+**Covers:**
 
 - RBAC  
 - Key Vault + Managed Identity  
@@ -85,15 +103,24 @@ Covers:
 ---
 
 ## **Week 2 — Networking & Security**  
+📁 **Folder:** `azure-bootcamp/Week2-Networking-Security/`  
+📘 **Overview:** [Week 2 README](azure-bootcamp/Week2-Networking-Security/README.md)  
+🏗️ **Capstone:** [Secure Hub-Spoke Architecture](azure-bootcamp/Week2-Networking-Security/capstone/week2-capstone.md)
+
+**Covers:**
+
 - Virtual networks & subnets  
 - NSGs & ASGs  
 - Private endpoints  
 - Azure Firewall  
-- Hub-spoke architecture (Capstone 2)
+- Hub-spoke architecture  
 
 ---
 
 ## **Week 3 — Compute, App Services & Storage**  
+
+**Covers:**
+
 - Virtual machines  
 - App Services  
 - Storage accounts  
@@ -103,6 +130,9 @@ Covers:
 ---
 
 ## **Week 4 — Monitoring, Backup & Automation**  
+
+**Covers:**
+
 - Azure Monitor  
 - Log Analytics  
 - Alerts & diagnostics  
@@ -112,6 +142,9 @@ Covers:
 ---
 
 ## **Week 5 — Security Engineering (AZ-500 Focus)**  
+
+**Covers:**
+
 - Microsoft Defender for Cloud  
 - Just-In-Time VM Access  
 - Privileged Identity Management (PIM)  
@@ -123,6 +156,9 @@ Covers:
 ---
 
 ## **Week 6 — Enterprise Architecture & Cost Governance**  
+
+**Covers:**
+
 - Management groups & landing zones  
 - Cost management & budgets  
 - Advanced Azure Policy  
@@ -134,6 +170,9 @@ Covers:
 ---
 
 ## **Week 7 — Architecture Deep Dive (AZ-305 Focus)**  
+
+**Covers:**
+
 - Hybrid identity architecture  
 - Data architecture & database decision frameworks  
 - Business continuity & disaster recovery  
@@ -145,6 +184,9 @@ Covers:
 ---
 
 ## **Week 8 — Azure Landing Zone (Full Build)**  
+
+**Covers:**
+
 - Management group hierarchy  
 - Identity baseline (CA, PIM, Identity Protection)  
 - Network baseline (Firewall, DNS Resolver, Private Link)  
@@ -164,60 +206,39 @@ Covers:
 - 🔍 Validation steps  
 - 📦 Full Bicep deployment  
 
-> ☕ Optional: Coffee breaks between weeks are highly recommended for optimal learning.
-
 ---
 
-## ✅ Week 1 Progress
+## ✅ Progress Tracker
 
-Week 1 is complete! Check out the capstone project:
+### **Week 1 — Complete** ✓  
+🏗️ **[Identity-First Landing Zone](azure-bootcamp/Week1-Identity-Governance/capstone/week1-capstone.md)**
 
-🏗️ **[Week 1 Capstone — Identity-First Landing Zone](azure-bootcamp/Week1-Identity-Governance/capstone/week1-capstone.md)**
-
-Includes:
-- User Assigned Managed Identity
-- Azure Key Vault (RBAC mode)
-- Resource Locks
-- Governance controls
-- Full Bicep deployment
-- VS Code-only workflow
+### **Week 2 — In Progress** 🚧  
+📘 [Week 2 Overview](azure-bootcamp/Week2-Networking-Security/README.md)
 
 ---
 
 ## 📘 Featured Labs
 
-### **Azure Front Door — Routing & Global Delivery**
-
-A comprehensive guide covering routing and global content delivery for static websites.
-
-📖 **Coming Soon** — Lab documentation in progress
+### **Azure Front Door — Routing & Global Delivery**  
+📖 *Coming Soon*
 
 ---
 
 ## 🛠️ Upcoming Labs
 
-### **Azure Front Door Rules Engine — Practical Scenarios**
-- Redirects & rewrites  
-- Header manipulation  
-- Cache overrides  
-- Troubleshooting rule evaluation  
-
-### **Azure Front Door Premium — Private Link End-to-End**
-- Private origins  
-- Locked-down storage accounts  
-- Global delivery without exposing backend services  
+- Azure Front Door Rules Engine  
+- Azure Front Door Premium with Private Link  
 
 ---
 
 ## 🧠 Skills Covered (AZ-104, AZ-305, AZ-500)
 
-- Manage Azure identities & governance  
-- Implement & manage storage  
-- Configure & manage virtual networking  
-- Deploy compute workloads  
-- Secure workloads using identity  
-- Monitor & maintain Azure resources  
-- Architect scalable, secure cloud solutions  
+- Identity & governance  
+- Networking & security  
+- Compute & storage  
+- Monitoring & automation  
+- Cloud architecture & design  
 
 ---
 
@@ -225,8 +246,8 @@ A comprehensive guide covering routing and global content delivery for static we
 
 This repository represents a continuous journey of learning, building, and documenting Azure solutions with:
 
-- Identity-first security patterns
-- Production-ready architectures
-- Clear, repeatable documentation
-- Real-world scenarios
+- Identity-first security patterns  
+- Production-ready architectures  
+- Clear, repeatable documentation  
+- Real-world scenarios  
 - Coffee-fueled dedication ☕
