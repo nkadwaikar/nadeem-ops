@@ -38,13 +38,13 @@ This week includes hands-on labs that build on each other.
 
 | Day | Topic | Lab File |
 |-----|-------|----------|
-| **Day 1** | Identity Fundamentals | [01-identity-fundamentals.md](docs/01-identity-fundamentals.md) |
-| **Day 2** | Managed Identity + Key Vault | [02-managed-identity-keyvault.md](docs/02-managed-identity-keyvault.md) |
-| **Day 3** | Azure AD Roles, RBAC & Scopes | [03-azuread-roles-rbac-scopes.md](docs/03-azuread-roles-rbac-scopes.md) |
-| **Day 4** | Azure Locks + Resource Policies | [04-azurelocks-resource-policies.md](docs/04-azurelocks-resource-policies.md) |
-| **Day 5** | Access Validation | [05-access-validation.md](docs/05-access-validation.md) |
-| **Day 6** | Azure Monitor + Activity Logs | [06-azuremonitor-activity-logs.md](docs/06-azuremonitor-activity-logs.md) |
-| **Day 7** | Bicep Deployment - Identity Stack | [07-bicep-deployment-identity-stack.md](docs/07-bicep-deployment-identity-stack.md) |
+| **Day 1** | Identity Fundamentals | [01-identity fundamentals.md](capstone/docs/01-identity%20fundamentals.md) |
+| **Day 2** | Managed Identity + Key Vault | [02-managed Identity + Azure Key Vault (Secretless Authentication).md](capstone/docs/02-managed%20Identity%20+%20Azure%20Key%20Vault%20(Secretless%20Authentication).md) |
+| **Day 3** | Azure AD Roles, RBAC & Scopes | [03-azuread-roles-rbac-scopes.md](capstone/docs/03-azuread-roles-rbac-scopes.md) |
+| **Day 4** | Azure Locks + Resource Policies | [04-azurelocks-resource-policies.md](capstone/docs/04-azurelocks-resource-policies.md) |
+| **Day 5** | Access Validation | [05-access-validation.md](capstone/docs/05-access-validation.md) |
+| **Day 6** | Azure Monitor + Activity Logs | [06-azuremonitor-activity-logs.md](capstone/docs/06-azuremonitor-activity-logs.md) |
+| **Day 7** | Bicep Deployment - Identity Stack | [07-bicep-beployment-identity-stack.md](capstone/docs/07-bicep-beployment-identity-stack.md) |
 
 Each lab includes step-by-step instructions, validation steps, troubleshooting patterns, and CLI/Portal walkthroughs.
 

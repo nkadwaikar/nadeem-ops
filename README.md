@@ -105,7 +105,7 @@ All written with the same care I put into my coffee — precise, consistent, and
 ## **Week 2 — Networking & Security**  
 📁 **Folder:** `azure-bootcamp/Week2-Networking-Security/`  
 📘 **Overview:** [Week 2 README](azure-bootcamp/Week2-Networking-Security/README.md)  
-🏗️ **Capstone:** [Secure Hub-Spoke Architecture](azure-bootcamp/Week2-Networking-Security/capstone/week2-capstone.md)
+🏗️ **Capstone:** [Secure Hub-Spoke Architecture](azure-bootcamp/Week2-Networking-Security/week2-capstone.md)
 
 **Covers:**
 
