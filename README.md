@@ -93,7 +93,7 @@ Bicep • PowerShell • GitHub Actions • ARM Templates
 
 # 📜 Certifications
 
-- **AZ‑104** — Azure Administrator  
+- **AZ‑104** — Azure Administrator (In Progress)
 - **AZ‑305** — Azure Architect (In Progress)  
 - **AZ‑500** — Security Engineer (In Progress)  
 - **AZ‑700** — Network Engineer (In Progress)  
