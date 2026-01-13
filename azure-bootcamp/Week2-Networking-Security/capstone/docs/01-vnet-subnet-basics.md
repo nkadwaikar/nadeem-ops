@@ -108,7 +108,7 @@ Subnets:
 
 ---
 
-## 🛠️ Step 4: Create Hub VNet (Student)
+## 🛠️ Step 4: Create Hub VNet
 
 > **Note:** Azure requires at least one subnet when creating a VNet. We will create a **temporary subnet** that will be replaced later.
 
@@ -127,7 +127,7 @@ Subnets:
 
 ---
 
-## 🛠️ Step 5: Create Spoke VNet (Student)
+## 🛠️ Step 5: Create Spoke VNet
 
 **Using Azure Portal:**
 1. **Go to** **Virtual Networks** → **Create**
